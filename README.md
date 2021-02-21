@@ -1,6 +1,8 @@
 # nodeezcryptor
 
-## Instalation
+This is a fork from https://codeberg.org/exttex/nodeezcryptor with MacOS support
+
+## Installation
 
 ### Linux:
 
@@ -11,8 +13,12 @@ Ubuntu: `apt install libssl-dev`
 
 OpenSSL Precompiled libraries & header files are now included in this repo.
 
+### Macos:
+
+OpenSSL Precompiled libraries & header files are now included in this repo.
+
 ## package.json:
-    "nodeezcryptor": "git+https://notabug.org/xefglm/nodeezcryptor.git#master"
+  "nodeezcryptor": "git+https://github.com/milouk/deezcryptor",
 
 ## Example:
 
