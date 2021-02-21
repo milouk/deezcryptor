@@ -16,6 +16,18 @@
             '-lssl'
           ]
         }],
+        ["OS=='mac'", {
+          "include_dirs": [
+            "<!@(node -p \"require('node-addon-api').include\")",
+            "<(module_root_dir)/opensslmacos/include"
+          ],
+          "link_settings": {
+            "libraries": [
+              "<(module_root_dir)/opensslmacos/lib/libcrypto.a",
+              "<(module_root_dir)/opensslmacos/lib/libssl.a"
+            ]
+          }
+        }],
         ["OS=='win'", {
           "include_dirs": [
             "<!@(node -p \"require('node-addon-api').include\")",
